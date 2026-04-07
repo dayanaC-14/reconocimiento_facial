@@ -15,5 +15,4 @@ def test_db():
         return {"mensaje": "Conexión exitosa a la base de datos"}
     except:
         return {"error": "No conecta a la base de datos"}
-   
 app.include_router(test_routes.router, prefix="/api")
